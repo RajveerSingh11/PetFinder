@@ -1,0 +1,51 @@
+<!DOCTPE html>
+<html lang-"en">
+<meta charset="utf-8">
+
+<head>
+  <title>Pet Finder</title>
+  <link rel="stylesheet" href="PetFinder.css">
+</head>
+
+<body> 
+  <div class = "container">
+    <h1>List of Pets</h1>
+
+    <div class = "inputBox">
+      <input 
+        type="text" 
+        name="searchBar" 
+        id="searchBar" 
+        placeholder="  Search Pets" 
+      />
+
+      <div class="filterBox">
+        <output>Filter age(Months) </output>
+
+        <input 
+          type="number" 
+          name="minAge" 
+          id="minAge" 
+          value="0"
+        />
+
+        <input 
+          type="number" 
+          name="maxAge" 
+          id="maxAge" 
+          value="30"
+        />
+
+        <button type="button" name="sortAsc" id="sortAsc" onclick="sortAsc()">Sort Asc</button>
+        <button type="button" name="sortDsc" id="sortDsc" onclick="sortDsc()">Sort Dsc</button>
+      </div>
+    </div>
+
+    <ul id="petList" class="list"></ul>
+
+  </div>
+  
+  <script type="text/javascript" src="PetFinder.js"></script>
+</body>
+</html>
+
